@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+nav{
+    background: black;
+    padding: 5px;
+}
+ul{
+    display: flex;
+    
+    
+}
+ul li{
+    list-style: none;
+    background: black;
+}
+ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: whitesmoke;
+}
+main{
+    background: teal;
+    color: white;
+    margin-top: 0;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.box{
+    width: 400px;
+    height: 50px;
+    margin-top: 10px;
+    background: rgba(128, 128, 128, 0.808);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+input[type="text"]{
+    height: 30px;
+    width: 48%;
+}
+input[type="email"]{
+    height: 30px;
+    width: 97%;
+    margin-top: 10px;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    margin-top: 20px;
+}
+input[type="submit"]{
+    height: 30px;
+    width: 48%;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    color: white;
+}
+#button-1{
+    background: rgb(3, 105, 105);
+}
+#button-2{
+    background: rgb(85, 122, 151);
+}
+.signup{
+    background: gray;
+    width: 855px;
+    height: 300px;
+    margin: auto;
+    padding-left: 10px;
+    padding-top: 20px;
+    
+}
+
+.teble{
+    background: rgba(128, 128, 128, 0.5);
+    height: 300px;
+    width: 855px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid rgb(220, 236, 241);
+    background: white;
+    width: 90%;
+    
+    }
+tr,
+td,
+th{
+    border: 1.5px solid rgb(174, 177, 177);
+    text-align: center;
+    height: 50px;
+    align-items: center;
+    
+}
+th{
+        background:rgb(52, 95, 129);
+        color: white;
+    }
+.flex{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+footer{
+    background: rgb(187, 185, 185);
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:800px){
+    
+    .flex,
+    .flex-2,.signup,.title,.register{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        width: 500px;
+    }
+    input[type="text"],
+    input[type="submit"]{
+        margin-top: 10px;
+        width: 70%;
+    }
+    input[type="email"]{
+        width: 70%;
+    }
+    .teble{
+        width: 90%;
+    }
+    footer{
+        width: 100%;
+    }
+    .signup{
+        height: 700px;
+    }
+}
